@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Gossip</string>
+
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <string name="profile_photo_page_heading1">Just one more step</string>
+    <string name="skip">Skip >></string>
 </resources>

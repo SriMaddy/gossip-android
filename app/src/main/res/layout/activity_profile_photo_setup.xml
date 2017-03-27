@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <com.innovsoft.gossip.utils.customfonts.MyTextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_20"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:layout_margin="@dimen/margin_padding10"
+        android:text="@string/profile_photo_page_heading1"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_margin="@dimen/margin_padding20"
+        android:layout_below="@+id/heading1"
+        android:layout_centerHorizontal="true"/>
+
+    <com.innovsoft.gossip.utils.customfonts.MyTextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text_size_15"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_below="@+id/profile_img"
+        android:layout_margin="@dimen/margin_padding20"
+        android:text="@string/skip"/>
+
+</RelativeLayout>

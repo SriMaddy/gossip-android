@@ -1,58 +1,27 @@
 {
   "project_info": {
-    "project_number": "801624290142",
-    "firebase_url": "https://gossips-f2f19.firebaseio.com",
-    "project_id": "gossips-f2f19",
-    "storage_bucket": "gossips-f2f19.appspot.com"
+    "project_number": "206706072014",
+    "firebase_url": "https://gossip-baf8a.firebaseio.com",
+    "project_id": "gossip-baf8a",
+    "storage_bucket": "gossip-baf8a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:801624290142:android:4309e1fc46007748",
-        "android_client_info": {
-          "package_name": "com.example.sridhar.gossips"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "801624290142-hgr3idfbkv2aehps8rs0gd6f2q349vmd.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAtwOI8dSwR5V97rEBN8tt7Jj_ksRh2xdI"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:801624290142:android:a669ffa894372700",
+        "mobilesdk_app_id": "1:206706072014:android:a669ffa894372700",
         "android_client_info": {
           "package_name": "com.innovsoft.gossip"
         }
       },
       "oauth_client": [
         {
-          "client_id": "801624290142-hgr3idfbkv2aehps8rs0gd6f2q349vmd.apps.googleusercontent.com",
+          "client_id": "206706072014-q9mi05g0fp6ipq0018up2do60ps2dv9k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtwOI8dSwR5V97rEBN8tt7Jj_ksRh2xdI"
+          "current_key": "AIzaSyDpHUUymBV1vR7HMcy5gL80DhP9rfZtEHA"
         }
       ],
       "services": {

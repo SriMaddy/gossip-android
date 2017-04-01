@@ -1,7 +1,5 @@
 package com.innovsoft.gossip.bean;
 
-import com.google.gson.annotations.Expose;
-
 /**
  * Created by SriMaddy on 3/27/2017.
  */
@@ -26,6 +24,8 @@ public class User {
 
 //    @Expose
     private long time;
+
+    private Circles circles;
 
     public User() {
     }
@@ -84,5 +84,13 @@ public class User {
 
     public void setTime(long time) {
         this.time = time;
+    }
+
+    public Circles getCircles() {
+        return circles;
+    }
+
+    public void setCircles(Circles circles) {
+        this.circles = circles;
     }
 }

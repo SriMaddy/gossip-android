@@ -5,6 +5,12 @@
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
 
-    <string name="profile_photo_page_heading1">Just one more step</string>
+    <string name="profile_photo_page_heading1">Make a cool pic.</string>
+    <string name="profile_photo_page_heading2">Let people can find you easily</string>
+    <string name="profile_photo_page_heading3">Gossip members</string>
+    <string name="profile_photo_page_heading4">Just one more step</string>
     <string name="skip">Skip >></string>
+    <string name="select_profile_image">Select your profile picture</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="save">SAVE</string>
 </resources>

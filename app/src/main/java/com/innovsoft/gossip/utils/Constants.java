@@ -10,4 +10,5 @@ public class Constants {
     public static final String SIGNUP_URL = MASTER_URL + "/users";
 
     public static final String KEY_USERS = "users";
+    public static final String KEY_IMAGE_PATH = "imagePath";
 }

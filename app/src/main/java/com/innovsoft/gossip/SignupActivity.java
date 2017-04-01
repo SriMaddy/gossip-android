@@ -28,6 +28,7 @@ import com.google.gson.reflect.TypeToken;
 import com.innovsoft.gossip.bean.User;
 import com.innovsoft.gossip.database.FirebaseDBHelper;
 import com.innovsoft.gossip.utils.Constants;
+import com.innovsoft.gossip.utils.SharedPreference;
 import com.innovsoft.gossip.utils.customfonts.MyEditText;
 import com.innovsoft.gossip.utils.customfonts.MyTextView;
 
@@ -98,14 +99,25 @@ public class SignupActivity extends AppCompatActivity {
                             dbHelper.addUser(user);
                             Toast.makeText(SignupActivity.this, "User created", Toast.LENGTH_SHORT).show();
 
-                            Intent intent = new Intent(SignupActivity.this, ProfilePhotoSetupActivity.class);
-                            startActivity(intent);
-                            finish();
+                            saveUserInSharedPreference(user);
+                            moveToProfilePhotoActivity();
                         } else {
                             Toast.makeText(SignupActivity.this, "User already exists", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+    }
+
+    private void saveUserInSharedPreference(User user) {
+        SharedPreference sharedPreference = new SharedPreference();
+        sharedPreference.saveUser(this, user);
+    }
+
+    private void moveToProfilePhotoActivity() {
+        Intent intent = new Intent(SignupActivity.this, ProfilePhotoSetupActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+        finish();
     }
 
     private void sendRequest() {

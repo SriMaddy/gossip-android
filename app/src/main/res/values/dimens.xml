@@ -6,6 +6,8 @@
     <dimen name="margin_padding5">5dp</dimen>
     <dimen name="margin_padding10">10dp</dimen>
     <dimen name="margin_padding20">20dp</dimen>
+    <dimen name="margin_padding30">30dp</dimen>
+    <dimen name="margin_padding80">80dp</dimen>
 
     <dimen name="text_size_12">12sp</dimen>
     <dimen name="text_size_15">15sp</dimen>

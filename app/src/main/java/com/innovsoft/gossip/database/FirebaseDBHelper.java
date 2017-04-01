@@ -33,4 +33,13 @@ public class FirebaseDBHelper {
 
         databaseReference.setValue(user);
     }
+
+    public void updateProfilePhoto(String userKey, String imagePath) {
+        DatabaseReference databaseReference = firebaseDatabase.getReference()
+                .child(Constants.KEY_USERS)
+                .child(userKey)
+                .child(Constants.KEY_IMAGE_PATH);
+
+        databaseReference.setValue(imagePath);
+    }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gossip_member_img"
+        android:layout_width="@dimen/margin_padding80"
+        android:layout_height="@dimen/margin_padding80"
+        android:padding="@dimen/margin_padding10"
+        android:src="@drawable/logo"/>
+
+</RelativeLayout>

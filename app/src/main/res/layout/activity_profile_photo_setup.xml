@@ -1,39 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    android:gravity="center">
+    android:background="@drawable/transparent_layout_shape">
 
-    <com.innovsoft.gossip.utils.customfonts.MyTextView
-        android:id="@+id/heading1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/text_size_20"
-        android:layout_centerHorizontal="true"
-        android:textAllCaps="true"
-        android:layout_margin="@dimen/margin_padding10"
-        android:text="@string/profile_photo_page_heading1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_layout_shape">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_img"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo"
-        android:layout_margin="@dimen/margin_padding20"
-        android:layout_below="@+id/heading1"
-        android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1.0">
 
-    <com.innovsoft.gossip.utils.customfonts.MyTextView
-        android:id="@+id/skip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="@dimen/text_size_15"
-        android:layout_centerHorizontal="true"
-        android:textAllCaps="false"
-        android:layout_below="@+id/profile_img"
-        android:layout_margin="@dimen/margin_padding20"
-        android:text="@string/skip"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9">
+
+                <RelativeLayout
+                    android:id="@+id/transparent_layout"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bg_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profile_placeholder"
+                        android:background="@drawable/transparent_layout_shape"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/transparent_layout_shape">
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.innovsoft.gossip.utils.customfonts.MyTextView
+                    android:id="@+id/heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/margin_padding30"
+                    android:text="@string/profile_photo_page_heading1"/>
+
+                <com.innovsoft.gossip.utils.customfonts.MyTextView
+                    android:id="@+id/heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/heading1"
+                    android:textAllCaps="false"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/margin_padding5"
+                    android:text="@string/profile_photo_page_heading2"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/profile_placeholder"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/margin_padding10"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.innovsoft.gossip.utils.customfonts.MyTextView
+                    android:id="@+id/select_profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_15"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/profile_img"
+                    android:layout_margin="@dimen/margin_padding10"
+                    android:text="@string/select_profile_image"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:text="@string/save"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="0.1"/>
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
